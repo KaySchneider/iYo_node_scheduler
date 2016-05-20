@@ -1,0 +1,17 @@
+{
+  "name": "iYo_nodejs_Scheduler",
+  "version": "0.0.1",
+  "description": "simple expermiment about nodejs process communication and implementing an way to schedule work only in one forked process while all other processes can send the scheduled work to the scheduler process. With an example fo an simple plugin system to use the process communication caller for other things\"",
+  "main": "iYo_Scheduler.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kayoliver82@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.13.0"
+  }
+}
