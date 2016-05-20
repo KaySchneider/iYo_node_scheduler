@@ -1,10 +1,7 @@
+'use strict';
 /**
- * the simple plugin structure should enable us to add simple
- * plugins to register some commands into inter process communication
- * without to handle about the details inside the process communication class
+ * Base class for plugins
  *
- * Im faking an abstract class with this construct. WIth the benefit that and
- * developer sees direct what hes missing in his child class
  * Created by ikay on 20.05.16.
  */
 

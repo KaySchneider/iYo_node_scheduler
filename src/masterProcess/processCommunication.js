@@ -46,17 +46,12 @@ processCommunication.prototype.testInject=function(plugin) {
 };
 
 /**
- * register a new command to the processCommunication
- * the plugin must inerhit the processCommunicationPluginInterface class!
- * If not it will break here!
- * Every plugin can be only registered once.
- * The plugin must be handled direct by the master process. it cant be added
- * via inter process communications
+ *
  */
 processCommunication.prototype.registerCMD = function(plugin, pluginName) {
     if(plugin instanceof processCommunicationPluginInterface) {
         if(this.uniqeNames.indexOf(pluginName) !==-1) {
-            throw  new Error("DIE DIE DIE, only register an plugin once, use mean.options.workerId to ensure only register your command inside one worker. This is running only inside the master process! :) try it or write kayoliver82@gmail.com");
+            //return here, register an unique name only once
             return;
         }
         this.testInject(plugin);
