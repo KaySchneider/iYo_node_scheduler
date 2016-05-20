@@ -70,7 +70,6 @@ processCommunication.prototype.init = function()   {
 };
 
 processCommunication.prototype.checkCMD=function(commandObject) {
-    console.log(arguments, 'RECEIVED DATA');
     switch(commandObject.cmd) {
         case 'registerCMD':
             this.registerCMD(commandObject.data.plugin, commandObject.data.pluginName);

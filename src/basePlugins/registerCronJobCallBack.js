@@ -10,7 +10,7 @@ var cronPCom=function() {
     this.master=null;
 };
 
-cronPCom.prototype = new pComInterface(); //inerhitance es5 style (retro man)
+cronPCom.prototype = new pComInterface();
 cronPCom.prototype.getInjections=function() {
     return ['cronJob','master'];
 };
@@ -51,7 +51,7 @@ cronPCom.prototype.checkCMD=function(cmd, data) {
     switch(cmd) {
         case 'addJob':
             //split the config and check it
-            this.prepareCallArgs(data); //maybe data isnt an function anymore its an string ? FUCK YEA
+            this.prepareCallArgs(data); 
             break;
 
     }
